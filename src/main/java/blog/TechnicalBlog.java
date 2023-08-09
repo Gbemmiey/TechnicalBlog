@@ -1,13 +1,13 @@
-package com.example.technicalblog;
+package blog;
+
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TechnicalBlogApplication {
-
+public class TechnicalBlog {
     public static void main(String[] args) {
-        SpringApplication.run(TechnicalBlogApplication.class, args);
+        SpringApplication.run(TechnicalBlog.class, args);
     }
-
 }
