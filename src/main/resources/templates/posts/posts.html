@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+<html  xmln:th="https://thymeleaf.org">
+<head th:replace="layout :: site-head">
+    <title>Spring MVC Technical Blog</title>
 </head>
-<body>
-$END$
-</body>
+<header th:replace="layout :: logged-in"></header>
+<h1>All the technical posts!!</h1>
+
+<main id="posts">
+    <article th:each="p : ${posts}">
+        <h2 class="title" th:text="${p.title}">Post Title </h2>
+        <div class="date">
+            <i>Posted On: </i>
+            <span th:text="${#dates.format(p.date, 'dd-MM-yyyy')}"> 10-August-2023</span>
+        </div>
+        <p class="content" th:utext="${p.body}"> Post Content</p>
+    </article>
+
+</main>
 </html>

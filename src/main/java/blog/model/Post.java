@@ -13,6 +13,7 @@ public class Post {
         this.id = id;
         this.title = title;
         this.body = body;
+
     }
 
 
@@ -50,5 +51,5 @@ public class Post {
     }
 
     private String body;
-    private Date date;
+    private Date date = new Date();
 }
