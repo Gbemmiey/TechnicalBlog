@@ -12,7 +12,7 @@ public class PostService implements IPostService{
     List<Post> posts = new ArrayList<Post>();
 
     public PostService() {
-//        posts.add(new Post());
+
         posts.add(new Post(1L, "Hey", "Hello from the Universe!"));
         posts.add(new Post(2L, "He", "Hello from the Multiverse!"));
         posts.add(new Post(3L, "H", "Hello from Pluto!"));
