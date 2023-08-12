@@ -17,8 +17,9 @@ public class HomeController {
 
     @RequestMapping("/")
     public String index(Model model) {
-        List<Post> posts = postService.findAll();
+        List<Post> posts = postService.firstThreePosts();
         model.addAttribute("posts", posts);
         return "index";
     }
+
 }

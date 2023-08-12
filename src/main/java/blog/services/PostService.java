@@ -23,7 +23,8 @@ public class PostService implements IPostService{
 
     @Override
     public Post create(Post post) {
-        return null;
+        posts.add(post);
+        return post;
     }
 
     @Override
@@ -33,7 +34,7 @@ public class PostService implements IPostService{
 
     @Override
     public List<Post> firstThreePosts() {
-        return null;
+        return posts.subList(0,3);
     }
 
     @Override

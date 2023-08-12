@@ -7,9 +7,18 @@
 
 </head>
 <body>
+<header th:fragment="logged-out" th:remove="tag">
+    <header>
+        <a href="/users/login" th:ref="@{users/login.html}">Login</a>
+        <a href="/users/register" th:ref="@{users/register.html}">Register</a>
+    </header>
+</header>
+
 <header th:fragment="logged-in" th:remove="tag">
     <header>
-        <a href="posts/posts.html" th:href="@{posts}">Posts</a>
+        <a href="posts.html" th:href="@{posts}">Posts</a>
+        <a href="/posts/create" th:ref="@{posts/create.html}">Create Post</a>
+        <a href="/users/register" th:ref="@{users/register.html}">Register</a>
     </header>
 </header>
 

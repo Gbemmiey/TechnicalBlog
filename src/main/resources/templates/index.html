@@ -2,8 +2,8 @@
 <head th:replace="layout :: site-head">
     <title>Spring MVC Technical Blog</title>
 </head>
-<header th:replace="layout :: logged-in"></header>
-<h1>All the technical posts!!</h1>
+<header th:replace="layout :: logged-out"></header>
+<h1>First 3 Posts!!</h1>
 
 <main id="posts">
 <article th:each="p : ${posts}">
