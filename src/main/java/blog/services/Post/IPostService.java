@@ -1,4 +1,4 @@
-package blog.services;
+package blog.services.Post;
 
 
 import blog.model.Post;
